@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*Main div: grey background for form*/
+.bckgrnd-grey{
+ ; /*all contents within this main div will float to left*/
+}
+
+ h1 {
+color:  #001a66; /*color of main h1 title: 'Enter the System'*/
+   font-family: "Times New Roman", Times, serif;
+font-weight:bold;
+ }
+/*The LHS div for Register*/
+#div1{
+width:20%;
+float:left;
+color:#666666; /*grey*/
+font-weight:bold;
+margin:20px; /*some space between this and adjacent div2*/
+}
+/*The RHS div for login*/
+#div2{
+    width:20%;
+    background-color: #1E4766;
+float:left;
+font-weight:bold;
+color:white;
+margin:20px;
+height:200px;
+padding: 40px;
+}
+
+</style>
+</head>
+<body>
+<div class="bckgrnd-grey">
+<h1>Enter the System</h1>
+<br>
+<h4>It is necessary to login Your account in order to sign up for a course.</h4>
+<div id="div1">
+        ARE YOU NEW? <span class="blue-font">REGISTER</span><br><br>
+<form name="frm_register" id="frm_register">
+<input class="regTxtBox" type="text" placeholder="Username"><br><br><br>
+<input class="regTxtBox" type="text" placeholder="Email"><br><br><br>
+<input class="regTxtBox" type="text" placeholder="Password"><br><br><br>
+<input class="regTxtBox" type="text" placeholder="Confirm Password"><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button button4">Register</button>
+</form>
+</div>
+
+<div id="div2">
+<span style="position:relative;top:5px;left:5px;">ALREADY A STUDENT? LOGIN</span><br><br>
+<form name="frm_login" id="frm_login">
+<input class="loginTxtBox" type="text" placeholder="User name"><br><br>
+<input class="loginTxtBox" type="text" placeholder="Password"><br><br>
+<table style="float:right;line-height:20%;" cellpadding=0 cellspacing=0>
+<tr>
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button button5">Login</button><br><br>
+<br><br>
+<input type="checkbox" style="border-radius: 0px / 0px ; ">Remember Me?           
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p><a href="forgotPassword" style="color:red;">Forgot Password?</a></p>
+
+</td>
+</tr>
+</table>
+</form>
+</div>
+
+</div>
+</body>
+</html>
